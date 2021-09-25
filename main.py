@@ -1,10 +1,17 @@
 from tkinter import *;
-
-
-
-# --------------------------------- Add Variables ---------------------------------
+import starfleet;
 
 root                  = Tk();
+
+# --------------------------------- Add Variables and Functions ---------------------------------
+
+# --- Functions ---
+
+def libexec():
+    starfleet.library(search_entry.get());
+
+def clear_entry():
+    search_entry.delete(0);
 
 # --- Images ---
 
@@ -30,14 +37,13 @@ main_logo             = Label(  root,         image=img_starfleet);
 # --- Search Area ---
 
 search_entry          = Entry(  search_frame, width=50 );
-search_btn_enter      = Button( search_frame, image=img_enter);
-search_btn_delete     = Button( search_frame, image=img_stop);
+search_btn_enter      = Button( search_frame, image=img_enter,  command=libexec);
+search_btn_delete     = Button( search_frame, image=img_stop,   command=clear_entry);
 
 # --------------------------------- Change Preferences ---------------------------------
 
 root.title('Starfleet Command Library');
 root.resizable(False, False);
-
 
 # --------------------------------- Locate the Widgets ---------------------------------
 
