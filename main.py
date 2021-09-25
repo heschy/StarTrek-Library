@@ -12,8 +12,8 @@ img_erase             = PhotoImage(file='./__recources__/erease_text.png');
 
 search_frame          = Frame(root);
 
-title                 = Label(root, text='Starfleet Command Library 1.0');
-subtitle              = Label(root, text='Programmed by HeSchy');
+title                 = Label(root, text='Starfleet Command Library 1.0', font='Arial 15 bold' ,width=40, height=2);
+subtitle              = Label(root, text='Programmed by HeSchy', fg='#555');
 main_logo             = Label(root, image=img_starfleet);
 search_btn_enter      = Button(search_frame, image=img_enter);
 search_btn_delete     = Button(search_frame, image=img_erase);
@@ -23,11 +23,6 @@ search_btn_delete     = Button(search_frame, image=img_erase);
 root.title('Starfleet Command Library');
 root.resizable(False, False);
 
-title['font'] = 'Arial 15 bold';
-title['width'] = 40;
-title['height'] = 2;
-
-subtitle['fg'] = '#555';
 
 
 
