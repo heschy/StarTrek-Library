@@ -42,7 +42,7 @@ search_btn_delete     = Button( search_frame, image=img_stop,   command=clear_en
 
 # --- Answer ---
 
-information_label     = Label(root, text='Bitte geben sie suchparameter ein.', bg='#000', fg='#fff');
+information_label     = Label(root, text='Bitte geben sie suchparameter ein.', bg='#000', fg='#fff', width=110, height=15);
 
 # --------------------------------- Change Preferences ---------------------------------
 

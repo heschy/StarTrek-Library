@@ -38,12 +38,62 @@ def library(name):
         'Prometheus Klasse',
         'NX-59650 und NX-74913',
         'Unbekannt',
-        '2373 - 2385',
-        'Version 2']
+        '2373 - 2385']
+        
+    spaceship_enterprise_1701 = [
+        'USS Enterprise',
+        'Constitution Klasse',
+        'NCC-1701',
+        'Captain James Tiberus Kirk',
+        '2151 - 2161']
+        
+    spaceship_enterprise_1701a = [
+        'USS Enterprise',
+        'Constitution Klasse',
+        'NCC-1701-A',
+        'Captain James Tiberus Kirk',
+        '2245 - 2285']
+        
+    spaceship_enterprise_1701b = [
+        'USS Enterprise',
+        'Excelsior Klasse',
+        'NCC-1701-B',
+        'Captain John Harriman',
+        '2293 - Unbekannt']
+        
+    spaceship_enterprise_1701c = [
+        'USS Enterprise',
+        'Ambassador Klasse',
+        'NCC-1701-A',
+        'Captain Rachel Garrett',
+        'Unbekannt - 2344',
+        'Außer Dienst gestellt']
+             
+    spaceship_enterprise_1701d = [
+        'USS Enterprise',
+        'Galaxy Klasse',
+        'NCC-1701-D',
+        'Captain Jean-Luc Picard',
+        '2363 - 2371',
+        'Zerstört']
+        
+    spaceship_enterprise_1701e = [
+        'USS Enterprise',
+        'Sovereign Klasse',
+        'NCC-1701-E',
+        'Captain Jean-Luc Picard',
+        '2372 - Unbekannt',
+        'Unbekannt']
 
     
     db = [
         spaceship_enterprise,
+        spaceship_enterprise_1701,
+        spaceship_enterprise_1701a,
+        spaceship_enterprise_1701b,
+        spaceship_enterprise_1701c,
+        spaceship_enterprise_1701d,
+        spaceship_enterprise_1701e,
         spaceship_prometheus,
         spaceship_voyager,
         spaceship_prometheus_59650];
@@ -66,7 +116,25 @@ def library(name):
     
     elif name == 'NX-59650' or name == 'NX-74913':
         output += db_entry_decode(spaceship_prometheus_59650, mhn.v2());
+        
+    elif name == 'NCC-1701':
+        output += db_entry_decode(spaceship_enterprise_1701, 'Auf diesem Shiff war kein MHN installiert.');
     
+    elif name == 'NCC-1701-A':
+        output += db_entry_decode(spaceship_enterprise_1701a, 'Auf diesem Shiff war kein MHN installiert.');
+    
+    elif name == 'NCC-1701-B':
+        output += db_entry_decode(spaceship_enterprise_1701b, 'Auf diesem Shiff war kein MHN installiert.');
+    
+    elif name == 'NCC-1701-C':
+        output += db_entry_decode(spaceship_enterprise_1701c, 'Auf diesem Shiff war kein MHN installiert.');
+    
+    elif name == 'NCC-1701-D':
+        output += db_entry_decode(spaceship_enterprise_1701d, 'Auf diesem Shiff war kein MHN installiert.');
+    
+    elif name == 'NCC-1701-E':
+        output += db_entry_decode(spaceship_enterprise_1701e, mhn.v1());
+        
     elif name == 'db_entry:nx59650' or name == 'db_entry:nx74913':
         output += str(spaceship_prometheus_59650);
 
