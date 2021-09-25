@@ -11,7 +11,7 @@ def libexec():
     information_label['text'] = starfleet.library(search_entry.get());
 
 def clear_entry():
-    search_entry.delete(0);
+    search_entry.delete(0, END);
 
 # --- Images ---
 
@@ -36,7 +36,7 @@ main_logo             = Label(  root,         image=img_starfleet);
 
 # --- Search Area ---
 
-search_entry          = Entry(  search_frame, width=50 );
+search_entry          = Entry(  search_frame, width=50);
 search_btn_enter      = Button( search_frame, image=img_enter,  command=libexec);
 search_btn_delete     = Button( search_frame, image=img_stop,   command=clear_entry);
 
