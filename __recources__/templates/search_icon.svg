@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- 
+	Created with Inkscape (http://www.inkscape.org/) 
+	Created by Henry Schynol (heschy)
+	Available in Github.com/heschy/startrek-library/
+	-->
+
+<svg
+   width="22.5"
+   height="30"
+   viewBox="0 0 47.625 47.625"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="search_icon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="3.6063859"
+     inkscape:cx="51.991108"
+     inkscape:cy="34.106167"
+     inkscape:window-width="1347"
+     inkscape:window-height="768"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid152" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient10443">
+      <stop
+         style="stop-color:#e5a50a;stop-opacity:1;"
+         offset="0"
+         id="stop10439" />
+      <stop
+         style="stop-color:#e58300;stop-opacity:1"
+         offset="1"
+         id="stop10441" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient10443"
+       id="linearGradient10445"
+       x1="14.379585"
+       y1="15.804725"
+       x2="44.42844"
+       y2="66.326614"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.77776591,0,0,0.65724524,5.4306943,8.0986103)" />
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:url(#linearGradient10445);fill-opacity:1;stroke:#000000;stroke-width:1.3204;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 26.843716,-4.5126761 c 0,0 -8.396217,18.0000181 -11.499166,27.3673731 -3.102951,9.367357 -7.1185337,28.836764 -7.1185337,28.836764 0,0 19.3478067,-18.367364 23.7284417,-15.428586 4.380634,2.938777 8.031163,15.428586 8.031163,15.428586 0,0 -2.190317,-20.938797 -4.380635,-30.306152 -2.190318,-9.367357 -8.76127,-25.8979851 -8.76127,-25.8979851 z"
+       id="path9758"
+       sodipodi:nodetypes="czcsczc" />
+    <circle
+       style="fill:#000000;fill-opacity:0;stroke-width:1;stroke:#000000;stroke-opacity:1"
+       id="path56"
+       cx="23.403509"
+       cy="20.968401"
+       r="4" />
+    <rect
+       style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.75;stroke-opacity:1"
+       id="rect3139"
+       width="10.722183"
+       height="2.2105041"
+       x="35.270981"
+       y="-2.8314171"
+       transform="rotate(45)" />
+  </g>
+</svg>
