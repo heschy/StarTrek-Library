@@ -8,7 +8,7 @@ root                  = Tk();
 # --- Functions ---
 
 def libexec():
-    starfleet.library(search_entry.get());
+    information_label['text'] = starfleet.library(search_entry.get());
 
 def clear_entry():
     search_entry.delete(0);
@@ -40,6 +40,10 @@ search_entry          = Entry(  search_frame, width=50 );
 search_btn_enter      = Button( search_frame, image=img_enter,  command=libexec);
 search_btn_delete     = Button( search_frame, image=img_stop,   command=clear_entry);
 
+# --- Answer ---
+
+information_label     = Label(root, text='Bitte geben sie suchparameter ein.', bg='#000', fg='#fff');
+
 # --------------------------------- Change Preferences ---------------------------------
 
 root.title('Starfleet Command Library');
@@ -54,6 +58,7 @@ search_frame.grid(row=3, column=1, sticky="n");
 search_btn_enter.grid(row=0, column=1);
 search_btn_delete.grid(row=0, column=2);
 search_entry.grid(row=0, column=0);
+information_label.grid(row=4, column=0, columnspan=3);
 
 # --------------------------------- Start the Main Loop ---------------------------------
 
