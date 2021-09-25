@@ -8,13 +8,15 @@ root                  = Tk();
 
 img_starfleet         = PhotoImage(file='./__recources__/starfleet_logo.png');
 img_enter             = PhotoImage(file='./__recources__/search_icon.png');
+img_erase             = PhotoImage(file='./__recources__/erease_text.png');
 
 search_frame          = Frame(root);
 
 title                 = Label(root, text='Starfleet Command Library 1.0');
 subtitle              = Label(root, text='Programmed by HeSchy');
 main_logo             = Label(root, image=img_starfleet);
-search_btn            = Button(search_frame, image=img_enter);
+search_btn_enter      = Button(search_frame, image=img_enter);
+search_btn_delete     = Button(search_frame, image=img_erase);
 
 # Settings
 
@@ -28,10 +30,12 @@ title['height'] = 2;
 subtitle['fg'] = '#555';
 
 
+
 title.grid(row=1, column=1);
 subtitle.grid(row=2, column=1);
 main_logo.grid(row=3, column=2);
-search_frame.grid(row=3, column=1);
-search_btn.pack(side=RIGHT);
+search_frame.grid(row=3, column=1, sticky="n");
+search_btn_enter.grid(row=0, column=1);
+search_btn_delete.grid(row=0, column=2);
 
 root.mainloop();
