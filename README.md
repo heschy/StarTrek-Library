@@ -1,3 +1,3 @@
-# StarTrek-Library
+# StarTrek-Library (GERMAN)
 This is the GUI Version of the Starfleet Library.
-Most of the Informations are from www.MemoryAlpha.Fandom.Com
+Die meißten Informationen sind von [www.MemoryAlpha.Fandom.Com](www.memoryalpha.fandom.com)
