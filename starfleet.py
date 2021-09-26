@@ -11,6 +11,7 @@ def db_entry_decode(database, mhn):
     output += 'Captain: '                                             + database[3] + '\n';
     output += 'Zeitraum: '                                            + database[4] + '\n';
     output += 'Medizinisches Holografisches Notfallprogramm (MHN): '  + mhn + '\n';
+    output += 'Status: '                                              + database[5] + '\n';
     return output;
 
 def library(name):
@@ -24,7 +25,7 @@ def library(name):
         'USS Enterprise (NCC-1701-C) Ambassador Klasse,   Captain Rachel Garrett,     Unbekannt - 2344\n',
         'USS Enterprise (NCC-1701-D) Galaxy Klasse,       Captain Jean-Luc Picard,    2363 - 2371\n',
         'USS Enterprise (NCC-1701-E) Sovereign Klasse,    Captain Jean-Luc Picard,    2372 - Unbekannt\n',
-        'USS Enterprise (NCC-1701-J) Universe Klasse,     Ubekannter Captain,         Unbekannt\n'];
+        'USS Enterprise (NCC-1701-J) Universe Klasse,     Unbekannter Captain,        Unbekannt\n'];
     
     spaceship_prometheus = [
         'USS Prometheus (NX-59650/NX-74913) Prometheus Klasse, Unbekannter Captain,            2373 - 2385\n',
@@ -38,36 +39,40 @@ def library(name):
         'Prometheus Klasse',
         'NX-59650 und NX-74913',
         'Unbekannt',
-        '2373 - 2385']
+        '2373 - 2385',
+        'Unbekannt']
         
     spaceship_enterprise_1701 = [
         'USS Enterprise',
         'Constitution Klasse',
         'NCC-1701',
         'Captain James Tiberus Kirk',
-        '2151 - 2161']
+        '2151 - 2161',
+        'Zerstört (Selbstzerstörung)']
         
     spaceship_enterprise_1701a = [
         'USS Enterprise',
         'Constitution Klasse',
         'NCC-1701-A',
         'Captain James Tiberus Kirk',
-        '2245 - 2285']
+        '2245 - 2285',
+        'Außer Dienst gestellt.']
         
     spaceship_enterprise_1701b = [
         'USS Enterprise',
         'Excelsior Klasse',
         'NCC-1701-B',
         'Captain John Harriman',
-        '2293 - Unbekannt']
+        '2293 - Unbekannt',
+        'Unbekannt']
         
     spaceship_enterprise_1701c = [
         'USS Enterprise',
         'Ambassador Klasse',
-        'NCC-1701-A',
+        'NCC-1701-C',
         'Captain Rachel Garrett',
         'Unbekannt - 2344',
-        'Außer Dienst gestellt']
+        'Zerstört']
              
     spaceship_enterprise_1701d = [
         'USS Enterprise',
@@ -85,6 +90,13 @@ def library(name):
         '2372 - Unbekannt',
         'Unbekannt']
 
+    spaceship_voyager74656 = [
+        'USS Voyager',
+        'Intrepid Klasse',
+        'NCC-74656',
+        'Captain Kathryn Janeway',
+        '2373 - 2385',
+        'Wird Ermittelt']
     
     db = [
         spaceship_enterprise,
@@ -96,6 +108,7 @@ def library(name):
         spaceship_enterprise_1701e,
         spaceship_prometheus,
         spaceship_voyager,
+        spaceship_voyager74656,
         spaceship_prometheus_59650];
         
     if name == 'MHN' or name == 'Medizinisches Holografisches Notfallprogramm' or name == 'mhn'or name == 'Medizinisch Holografisches Notfallprogramm':
@@ -134,6 +147,9 @@ def library(name):
     
     elif name == 'NCC-1701-E':
         output += db_entry_decode(spaceship_enterprise_1701e, mhn.v1());
+       
+    elif name == 'NCC-74656':
+        output += db_entry_decode(spaceship_voyager74656, mhn.v1());
         
     elif name == 'db_entry:nx59650' or name == 'db_entry:nx74913':
         output += str(spaceship_prometheus_59650);
