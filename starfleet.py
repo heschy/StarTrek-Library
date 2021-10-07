@@ -16,6 +16,11 @@ def db_entry_decode(database, mhn):
 
 def library(name):
     output='\n';
+    
+    borgqueen = [
+        'Spezies 125 -> Borg',
+        'Oberste Borg Cheffin',
+        'Borg Individum'];
 
     spaceship_enterprise = [
         'USS Enterprise (NX-01)      NX Klasse            Captain Jonathan Archer,    2151 - 2161\n',
@@ -98,6 +103,10 @@ def library(name):
         '2373 - 2385',
         'Wird Ermittelt']
     
+    borg_db = [
+        borgqueen
+    ];
+    
     db = [
         spaceship_enterprise,
         spaceship_enterprise_1701,
@@ -109,9 +118,13 @@ def library(name):
         spaceship_prometheus,
         spaceship_voyager,
         spaceship_voyager74656,
-        spaceship_prometheus_59650];
+        spaceship_prometheus_59650,
+        borg_db];
         
-    if name == 'MHN' or name == 'Medizinisches Holografisches Notfallprogramm' or name == 'mhn'or name == 'Medizinisch Holografisches Notfallprogramm':
+    if name == 'Borg Queen' or name == 'Borg Königin':
+        for li in borg_db[0]:
+            output += li + '\n';
+    elif name == 'MHN' or name == 'Medizinisches Holografisches Notfallprogramm' or name == 'mhn'or name == 'Medizinisch Holografisches Notfallprogramm':
         output = mhn.v1()+'\n';
         output += mhn.v2();
         
