@@ -8,4 +8,4 @@ Warning: There is no Language support for english yet!
 - [ ] Add a Language support for English.
 
 ## Quellen:
-[www.memoryalpha.fandom.com](https://www.memoryalpha.fandom.com)
+[www.memoryalpha.fandom.com](https://memory-alpha.fandom.com)
