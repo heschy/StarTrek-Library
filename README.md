@@ -1,5 +1,7 @@
 # StarTrek-Library
-StarTrek-Library hat eine GUI bekommen!
+Star Trek Library now has a GUI. 
+
+Warning: There is no Language support for english yet!
 
 ## ToDo:
 - [X] Add a Language support for German.
