@@ -17,6 +17,64 @@ spaceship_prometheus = [
 spaceship_voyager = [
     'USS Voyager (NCC-74656) Intrepid Klasse, Captain Kathryn Janeway, 2373 - 2385\n'];
 
+# --- Individual Starships ---
+
+spaceship_enterprise_1701 = [
+    'USS Enterprise',
+    'Constitution Klasse',
+    'NCC-1701',
+    'Captain James Tiberus Kirk',
+    '2151 - 2161',
+    'Zerstört (Selbstzerstörung)'];
+
+spaceship_enterprise_1701a = [
+    'USS Enterprise',
+    'Constitution Klasse',
+    'NCC-1701-A',
+    'Captain James Tiberus Kirk',
+    '2245 - 2285',
+    'Außer Dienst gestellt.'];
+
+spaceship_enterprise_1701b = [
+    'USS Enterprise',
+    'Excelsior Klasse',
+    'NCC-1701-B',
+    'Captain John Harriman',
+    '2293 - Unbekannt',
+    'Unbekannt'];
+
+spaceship_enterprise_1701c = [
+    'USS Enterprise',
+    'Ambassador Klasse',
+    'NCC-1701-C',
+    'Captain Rachel Garrett',
+    'Unbekannt - 2344',
+    'Zerstört'];
+
+spaceship_enterprise_1701d = [
+    'USS Enterprise',
+    'Galaxy Klasse',
+    'NCC-1701-D',
+    'Captain Jean-Luc Picard',
+    '2363 - 2371',
+    'Zerstört'];
+
+spaceship_enterprise_1701e = [
+    'USS Enterprise',
+    'Sovereign Klasse',
+    'NCC-1701-E',
+    'Captain Jean-Luc Picard',
+    '2372 - Unbekannt',
+    'Unbekannt'];
+
+spaceship_enterprise_1701j = [
+    'USS Enterprise',
+    'Universe Klasse',
+    'NCC-1701-J',
+    'Unbekannt',
+    '26. Jahrhundert',
+    'Unbekannt'];
+
 spaceship_prometheus_59650 = [
     'USS Prometheus',
     'Prometheus Klasse',
